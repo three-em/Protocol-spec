@@ -60,8 +60,8 @@ In order to deploy a new contract on Arweave the SmartWeave client must:
 
 #### Contract source code specification
 
-1. A contract source code MAY be written in ES module format.
-2. A contract source MUST contain function (sync or async) named `handle`.
+1. A contract source code MUST be written in ES module format.
+2. A contract source MUST contain a function (sync or async) named `handle` in it's global scope.
 3. A contract source MAY use IIFE bundling format.
 4. The `handle` function MUST accept exactly two arguments: `state` and `action`
 5. The `state` argument MUST be the current state of the contract.
