@@ -30,6 +30,7 @@ The SmartWeave protocol consists of few key concepts:
 1. [Contract creation](#contract-creation)
 2. [Contract interactions](#contract-interactions)
 3. [Lazy-evaluation of the contract state](#lazy-evaluation-of-the-contract-state)
+4. [Protocol-based spec](#protocol-based-spec)
 
 ### Contract creation
 
@@ -108,3 +109,8 @@ transaction block height (i.e. when the transaction was mined in the chain) and 
 The full ordering is `[ block_height, sha256(transactionId + blockHash) ]`.
 3. Applies the sorted interactions onto the contract's `handler` function - evaluating contract's state
    up to the requested block height.
+   
+### Protocol-based Spec
+
+3EM owns its own spec for its execution engine. With this spec, 3EM is able to accomplish its core goals in productive ways while still guaranteeing a high level of compatability with SmartWeave. For more information about the 3EM spec, [read here](https://github.com/three-em/Protocol-spec/blob/main/3em-general-spec.md).
+
